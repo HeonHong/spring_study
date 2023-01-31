@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+<bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<!-- <property name="prefix" value="/view/"></property> -->
+		<!-- InternalResourceViewResolver안에 있는 세터. 위에 건 폴더가 다른 거일 수도 있어서 잘 안씀.
+		controller에서 아예 설정해버림. -->
+		<property name="suffix" value=".jsp"></property>
+	</bean>
+	
+	<bean id="helloController" class="com.controller.HelloController"></bean>
+
+
+</beans>

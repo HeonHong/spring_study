@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+	
+	<!-- Sample01 -->
+	<!-- <context:component-scan base-package="sample01"></context:component-scan> -->
+	<context:component-scan base-package="sample03"></context:component-scan>
+	<!-- 01,02도 springconf에 있지만 여기다 열어놔도 상관없다. 여기 없으면 spring conf에서 찾고 있으면 여기서 그냥 처리함. -->
+	<context:component-scan base-package="sample05"></context:component-scan>
+	<context:component-scan base-package="spring.conf"></context:component-scan>
+	
+	
+	
+	<!-- <bean id="messageBeanImpl" class="sample01.MessageBeanImpl">
+		<constructor-arg>
+			<value>사과</value>
+		</constructor-arg>
+		<property name="cost">
+			<value>5000</value>
+		</property> --><!-- setter. 이런게 DI다 -->
+		<!-- <property name="qty">
+			<value>3</value>
+		</property>
+	</bean> --><!-- new해 준 거랑 동일 -->
+	
+	
+	<!-- 	<context:component-scan base-package="sample02"></context:component-scan>
+ -->
+</beans>

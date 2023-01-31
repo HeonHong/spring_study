@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<!-- 어차피 두 개의 xml 파일을 한꺼번에 읽기 때문에 servlet-context에만 남겨놔도 된다. -->
+	<!-- <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+	<property name="suffix" value=".jsp"></property>
+	</bean> -->
+	
+	<bean id="sungJukController" class="com.controller.SungJukController"></bean>
+
+</beans>
